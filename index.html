@@ -3,10 +3,44 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>E-Commerce Website</title>
     </head>
     <body>
+        <nav class="navbar">
+            <span class="navbar-toggler" id="toggler">
+                <i class="fas fa-bars" id="hamburger"></i>
+                <i class="fas fa-times d-none" id="close"></i>
+            </span>
+            <a href="#" class="navbar-brand">Brand Name</a>
+            <h2 class="navbar-nav-header d-none" id="header">Menu</h2>
+            <ul class="navbar-nav" id="nav">
+                <li>
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Products</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Our Story</a>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            let nav = document.getElementById('nav');
+            let toggler = document.getElementById('toggler');
+            let hamburger = document.getElementById('hamburger');
+            let close = document.getElementById('close');
+            let header = document.getElementById('header');
 
+            toggler.addEventListener('click', function () {
+                nav.classList.toggle('d-block');
+                hamburger.classList.toggle('d-none');
+                close.classList.toggle('d-block');
+                header.classList.toggle('d-block');
+            });
+        </script>
     </body>
 </html>
