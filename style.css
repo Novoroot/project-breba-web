@@ -129,12 +129,23 @@ body {
 }
 .product-price {
     text-align: center;
-    flex: 2;
-    font-size: 18px;
+    flex: 1;
+    font-size: 16px;
     color: #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .product-store {
     flex: 1;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-store img {
+    max-width: 119.94px;
+    width: 70%;
 }
 @media (min-width: 768px) {
     .navbar {
