@@ -147,13 +147,73 @@ body {
     max-width: 119.94px;
     width: 70%;
 }
+#our-story-section {
+    display: flex;
+    color: #707070;
+    padding: 20px 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#our-story-section h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #EF9B9B;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#our-story-section div {
+    flex-basis: 44%;
+}
+#our-story {
+    display: flex;
+    flex-wrap: wrap;
+}
+#our-story h2 {
+    order: -1;
+    flex: 1 0 100%;
+}
+#our-story div:nth-child(2) {
+    padding: 10px 0px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#our-story div:nth-child(2) img {
+    max-width: 260px;
+}
+#our-story div:nth-child(3) {
+    padding: 10px;
+    flex: 1;
+}
+#health-benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+#health-benefits h2 {
+    order: -1;
+    flex: 1 0 100%;
+}
+#health-benefits div {
+    padding: 10px;
+}
+#health-benefits ul {
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-left: 20px;
+}
+#health-benefits div:nth-child(2) {
+    flex: 1;
+}
+#health-benefits div:nth-child(3) {
+    flex: 1;
+}
 footer {
     color: #707070;
     background: #EF9B9B;
     text-align: center;
     font-size: 14px;
     padding: 20px;
-
 }
 footer a {
     text-decoration: none;
@@ -221,5 +281,12 @@ footer a:hover {
     .product-details {
         display: flex;
         flex-direction: column;
+    }
+    #our-story-section {
+        flex-direction: row;
+        padding: 20px 60px;
+    }
+    #our-story-section h2 {
+        text-align: left;
     }
 }
